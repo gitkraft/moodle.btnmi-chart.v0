@@ -213,6 +213,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `mariadb.primary.persistence.size`          | Database Persistent Volume Size                                                          | `8Gi`               |
 | `mariadb.primary.persistence.hostPath`      | Set path in case you want to use local host path volumes (not recommended in production) | `""`                |
 | `mariadb.primary.persistence.existingClaim` | Name of an existing `PersistentVolumeClaim` for MariaDB primary replicas                 | `""`                |
+| `externalDatabase.type`                     | Type of the existing database                                                            | `""`                |
 | `externalDatabase.host`                     | Host of the existing database                                                            | `""`                |
 | `externalDatabase.port`                     | Port of the existing database                                                            | `3306`              |
 | `externalDatabase.user`                     | Existing username in the external db                                                     | `bn_moodle`         |
@@ -390,7 +391,7 @@ You may want to review the [PV reclaim policy](https://kubernetes.io/docs/tasks/
 
 ## Troubleshooting
 
-Find more information about how to deal with common errors related to Bitnami���s Helm charts in [this troubleshooting guide](https://docs.bitnami.com/general/how-to/troubleshoot-helm-chart-issues).
+Find more information about how to deal with common errors related to Bitnami's Helm charts in [this troubleshooting guide](https://docs.bitnami.com/general/how-to/troubleshoot-helm-chart-issues).
 
 ## Upgrading
 
